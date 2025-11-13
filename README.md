@@ -1,8 +1,7 @@
 # Portfolio-Website
 
-Title: Personal Portfolio Website with Integrated Chess Engine
+Personal Portfolio Website with Integrated Chess Engine
 
-Description:
 This project combines a personal portfolio website with a fully playable chess engine, demonstrating both web development and AI integration skills. The repository consists of two main components:
 
 Personal Portfolio Website
