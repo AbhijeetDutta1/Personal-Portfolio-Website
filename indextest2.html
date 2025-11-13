@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CS Student</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="section">
+        <canvas id="particles-home"></canvas>
+        <div class="hero-content">
+            <h1>Hi, I'm </h1>
+            <div class="subtitle">CS Student & AI/ML Enthusiast</div>
+            <div class="tagline">Exploring the intersection of Artificial Intelligence and Biotechnology</div>
+        </div>
+        <a href="#about" class="down-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-text-section">
+                <h2>About Me</h2>
+                <p class="about-text">
+                    I'm a passionate computer science student with a deep interest in leveraging artificial intelligence 
+                    and machine learning to solve complex problems in biotechnology and healthcare. My work focuses on 
+                    developing innovative solutions that bridge the gap between computational intelligence and biological systems.
+                </p>
+                <p class="about-text">
+                    With experience in deep learning, bioinformatics, and data science, I'm committed to pushing the 
+                    boundaries of what's possible when technology meets biology.
+                </p>
+                <a href="#" class="resume-button" download>
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+            <div class="about-image-section">
+                <div class="profile-image-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#projects" class="down-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <canvas id="projects-particles"></canvas>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Neural Network Classifier</h3>
+                        <p>Developed a deep learning model for medical image classification with 94% accuracy using TensorFlow and PyTorch.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Genomic Data Analyzer</h3>
+                        <p>Built a bioinformatics tool for analyzing DNA sequences and identifying genetic markers related to disease susceptibility.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">BioPython</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>ML Drug Discovery Platform</h3>
+                        <p>Created a machine learning pipeline to predict drug-protein interactions, accelerating the drug discovery process.</p>
+                        <div class="project-tags">
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Work Section -->
+    <section id="work">
+        <canvas id="work-particles"></canvas>
+        <div class="container">
+            <h2 class="section-title">Current Work</h2>
+            <div class="current-work">
+                <h3>What I'm Working On</h3>
+                <p>Currently pursuing exciting opportunities at the intersection of AI/ML and biotechnology:</p>
+                <ul>
+                    <li>Researching novel deep learning architectures for protein structure prediction</li>
+                    <li>Contributing to open-source bioinformatics projects</li>
+                    <li>Developing AI-powered diagnostic tools for early disease detection</li>
+                    <li>Studying reinforcement learning applications in drug optimization</li>
+                    <li>Writing technical blog posts on ML in healthcare</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section id="social">
+        <canvas id="social-particles"></canvas>
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="social-links">
+                <a href="#" class="social-card" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <div>GitHub</div>
+                </a>
+                <a href="#" class="social-card" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <div>LinkedIn</div>
+                </a>
+                <a href="#" class="social-card" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <div>Twitter</div>
+                </a>
+                <a href="#" class="social-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>Email</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <canvas id="contact-particles"></canvas>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
