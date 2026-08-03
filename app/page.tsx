@@ -18,7 +18,7 @@ export default function Home() {
           <DesktopIcon href="/experience" label="Experience" icon={Briefcase} />
         </div>
 
-        <div className="order-1 col-span-2 md:order-none md:col-start-2 md:row-start-2">
+        <div className="order-1 col-span-2 md:order-none md:col-span-1 md:col-start-2 md:row-start-2">
           <WelcomeCard />
         </div>
 
