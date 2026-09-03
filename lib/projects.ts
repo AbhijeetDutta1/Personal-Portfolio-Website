@@ -1,4 +1,4 @@
-import { Database, Network, Swords, Bot, LineChart, LucideIcon } from "lucide-react";
+import { Database, Network, Swords, Bot, LineChart, Cpu, LucideIcon } from "lucide-react";
 
 export type ProjectStatus = "Completed" | "In Progress" | "Planned";
 
@@ -26,12 +26,12 @@ export const projects: Project[] = [
     title: "Neural Network Chess Engine",
     tagline: "Competitive AI chess with a hybrid classical + neural architecture",
     description:
-      "A competitive chess engine achieving 2000+ rated play by integrating classical search algorithms with neural network-based evaluation. This hybrid system combines the strategic depth of traditional minimax algorithms with the pattern recognition capabilities of deep learning. Built a hybrid system interfacing optimized C++ move generation and alpha-beta pruning search with a PyTorch neural network for position evaluation, trained on thousands of expert and self-play games, with board representation optimized using bitboards and Zobrist hashing.",
+      "A competitive chess engine integrating classical search algorithms with neural network-based evaluation. Built a C++ engine with minimax search and alpha-beta pruning for efficient legal move generation, then integrated a PyTorch neural network for board evaluation, combining classical search with learned heuristics. Trained via supervised learning on expert games and self-play RL, using bitboards and Zobrist hashing for speed.",
     features: [
-      "Achieved 2000+ rating in competitive play",
-      "Efficient move generation using bitboards",
-      "Neural network trained on expert game data",
-      "Optimized search with alpha-beta pruning",
+      "Minimax search with alpha-beta pruning for efficient move generation",
+      "PyTorch neural network for board evaluation",
+      "Trained via supervised learning and self-play RL",
+      "Bitboards and Zobrist hashing for fast board representation",
     ],
     techStack: [
       "Python",
@@ -69,24 +69,43 @@ export const projects: Project[] = [
     id: 3,
     slug: "topological-deep-learning-infrastructure",
     icon: Network,
-    title: "Topological Deep Learning Infrastructure",
+    title: "Temporal Hypergraph Data Pipeline for Topological Deep Learning",
     tagline: "Contributing to TopoBench research",
     description:
-      "Implemented infrastructure for temporal hypergraph datasets in PyTorch Geometric, enabling topological deep learning research. Developed a DawnDataset loader for PyTorch Geometric that converts raw timestamped simplices into structured graph representations, with configuration-driven preprocessing pipelines and comprehensive pytest validation for data integrity, integrated with the TopoBench framework for reproducible experiments.",
+      "Built a PyTorch Geometric dataset loader for temporal hypergraphs, achieving 33% faster data loading over baseline. Developed config-driven preprocessing pipelines and a pytest validation suite for hyperedge and data integrity, integrated into the open-source TopoBench library. Work published in a co-authored white paper at PMLR TAG-DS 2025.",
     features: [
-      "Contributed to TopoBench open-source project",
-      "Work acknowledged in PMLR white paper (2025)",
-      "Comprehensive test suite with pytest",
-      "Robust hyperedge incidence construction",
+      "33% faster data loading over baseline",
+      "Integrated into open-source TopoBench library",
+      "Co-authored white paper at PMLR TAG-DS 2025",
+      "Config-driven preprocessing with pytest validation suite",
     ],
     techStack: ["Python", "PyTorch Geometric", "Pytest", "Temporal Graphs", "Hypergraphs"],
     githubUrl: "https://github.com/AbhijeetDutta1",
     status: "Completed",
     timeline: "2025",
   },
-  // TODO: placeholder — replace with real description, tech stack, links, status, and timeline.
   {
     id: 4,
+    slug: "unix-like-operating-system-kernel",
+    icon: Cpu,
+    title: "Unix-Like Operating System Kernel",
+    tagline: "Preemptive multitasking kernel for a simulated MIPS architecture",
+    description:
+      "Built a preemptive multitasking kernel in C for a simulated MIPS architecture with PCBs, context switching, timer interrupts, and memory partitioning. Designed IPC via pipes with file descriptor tables, reference counting, and synchronized FIFO buffering for concurrent data exchange. Developed kernel subsystems for process management and system calls using semaphores, atomic I/O, and multi-process shell execution.",
+    features: [
+      "Preemptive multitasking with PCBs and context switching",
+      "Timer interrupts and memory partitioning",
+      "IPC via pipes with file descriptor tables and reference counting",
+      "Multi-process shell execution with semaphores and atomic I/O",
+    ],
+    techStack: ["C", "MIPS", "Semaphores", "IPC"],
+    githubUrl: "https://github.com/AbhijeetDutta1",
+    status: "Completed",
+    timeline: "2025",
+  },
+  // TODO: placeholder — replace with real description, tech stack, links, status, and timeline.
+  {
+    id: 5,
     slug: "ai-resume-analyzer",
     icon: Bot,
     title: "AI Resume Analyzer",
@@ -102,7 +121,7 @@ export const projects: Project[] = [
   },
   // TODO: placeholder — replace with real description, tech stack, links, status, and timeline.
   {
-    id: 5,
+    id: 6,
     slug: "trading-dashboard",
     icon: LineChart,
     title: "Trading Dashboard",
